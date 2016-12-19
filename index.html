@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Foro Korczak - Innovación docente para una universidad pertinente</title>
+
+    <!-- Styles-->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Font-Awesome CSS - Sólo necesario para correr localmente -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+
+  </head>
+  <body>
+    <!-- Menu Principal -->
+    <nav id="menu-principal" class="navbar navbar-default menu-principal">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <div class="organizadores-mobile">
+            <a class="navbar-brand logo-caee" href="http://caee.javeriana.edu.co" target="blank"><img src="img/logo-caee.svg" alt="CAE+E"></a>
+            <a class="navbar-brand logo-javeriana" href="http://www.javeriana.edu.co" target="blank"><img src="img/logo-javeriana.svg" alt="Pontificia Universidad Javeriana"></a>
+          </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav informacion-general">
+            <li><a href="info-general.html#quien-es"><span class="divisor"></span><span>¿Quién es Janusz Korczak?</span></a></li>
+            <li><a href="info-general.html#participantes"><span class="divisor"></span><span>Participantes</span></a></li>
+            <li><a href="info-general.html#organizadores"><span class="divisor"></span><span>Organizadores</span></a></li>
+          </ul>
+
+          <div class="nav navbar-nav navbar-right organizadores-desktop">
+            <a class="navbar-brand logo-caee" href="http://caee.javeriana.edu.co" target="blank"><img src="img/logo-caee.svg" alt="CAE+E"></a>
+            <a class="navbar-brand logo-javeriana" href="http://www.javeriana.edu.co" target="blank"><img src="img/logo-javeriana.svg" alt="Universidad Javeriana"></a>
+          </div>
+        </div>      
+
+      </div>
+    </nav>
+    <!-- /Menu Principal -->
+    
+    <!-- Menu Secundario -->
+    <section class="menu-secundario-container">
+      <nav id="menu-secundario" class="navbar navbar-default">
+        <div class="container-fluid">
+
+          <div class="navbar-header">
+            <a class="navbar-brand text-center logo-korczak" href="index.html"><img src="img/foro-korczak.svg" alt="Foro Korczak"></a>
+            
+            <button id="segundo-boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar boton-blanco"></span>
+              <span class="icon-bar boton-blanco"></span>
+              <span class="icon-bar boton-blanco"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav navbar-left dias-evento ensenanza">
+              <li><a href="ensenanza-sociedad.html"><strong>Día 1:</strong> Enseñanza y sociedad</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right dias-evento innovacion">
+              <li><a href="innovacion-accion.html"><strong>Día 2:</strong> Innovación en acción</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+
+      <div class="container-fluid korczak-home header-video">
+        <img src="img/korczak-home.png"
+          class="header-video__media"
+          data-video-URL="https://www.youtube.com/embed/d6SSRcWXlIU"
+          data-video-width="640"
+          data-video-height="360" alt="Foro Korczak">
+        
+        <a href="https://www.youtube.com/embed/d6SSRcWXlIU" class="header-video__play-trigger" id="header-video__play-trigger"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+
+        <div class="innovacion-texto desktop">
+          <span>Innovación docente</span>
+          <span>para una universidad pertinente</span>
+        </div>
+
+        <button type="button" class="header-video__close-trigger" id="header-video__close-trigger">&times;</button>
+
+        <div id="conferencistas-home" class="carousel carousel-desktop">
+          <div class="container">
+            <div class="row">
+              <div class="span-12">
+
+                <div id="conferencistas-carousel" class="owl-carousel">
+
+                  <div class="item" data-toggle="modal" data-target="#video-jorge-pelaez">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/jorge-pelaez.jpg" alt="Jorge Humberto Peláez Piedrahita, S.J.">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente. Palabras del rector.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-luis-prieto">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/luis-prieto.jpg" alt="Luis David Prieto Martínez">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente. Palabras del vicerrector.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-sergio-fajardo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/sergio-fajardo.jpg" alt="Sergio Fajardo Valderrama">
+                      <figcaption>La educación en clave de innovación en la construcción de páis.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-jaime-parra">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/jaime-parra.jpg" alt="Jaime Parra Rodríguez">
+                      <figcaption>Innovación docente: retorno a lo fundamental y oportunidades de cambio.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-panelistas">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/panelistas.gif" alt="Carlos Vasco, Roberto Vidal y Andrés Garibello">
+                      <figcaption>Modos alternos de educar.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-alejandro-santamaria">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/alejandro-santamaria.jpg" alt="Alejandro Sanz de Santamaría">
+                      <figcaption>Tras las huellas de Korczak: Cómo educar a un jóven y adulto.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-alvaro-restrepo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/alvaro-restrepo.jpg" alt="Álvaro Restrepo">
+                      <figcaption>Más allá de la mente: Educar para los sentidos.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-carlos-lugo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/carlos-lugo.jpg" alt="Carlos Lugo">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente.</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-mobile">
+
+      <div class="innovacion-texto mobile">
+        <span>Innovación docente</span>
+        <span>para una universidad pertinente</span>
+      </div>
+
+      <div>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+
+            <div id="conf-mobile" class="owl-carousel">
+
+                  <div class="item" data-toggle="modal" data-target="#video-jorge-pelaez">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/jorge-pelaez.jpg" alt="Jorge Humberto Peláez Piedrahita, S.J.">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente. Palabras del rector.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-luis-prieto">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/luis-prieto.jpg" alt="Luis David Prieto Martínez">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente. Palabras del vicerrector.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-sergio-fajardo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/sergio-fajardo.jpg" alt="Sergio Fajardo Valderrama">
+                      <figcaption>La educación en clave de innovación en la construcción de páis.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-jaime-parra">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/jaime-parra.jpg" alt="Jaime Parra Rodríguez">
+                      <figcaption>Innovación docente: retorno a lo fundamental y oportunidades de cambio.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-panelistas">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/panelistas.gif" alt="Carlos Vasco, Roberto Vidal y Andrés Garibello">
+                      <figcaption>Modos alternos de educar.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-alejandro-santamaria">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/alejandro-santamaria.jpg" alt="Alejandro Sanz de Santamaría">
+                      <figcaption>Tras las huellas de Korczak: Cómo educar a un jóven y adulto.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-alvaro-restrepo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/alvaro-restrepo.jpg" alt="Álvaro Restrepo">
+                      <figcaption>Más allá de la mente: Educar para los sentidos.</figcaption>
+                    </figure>
+                  </div>
+
+                  <div class="item" data-toggle="modal" data-target="#video-carlos-lugo">
+                    <figure>
+                      <img class="lazyOwl" data-src="img/home/carlos-lugo.jpg" alt="Carlos Lugo">
+                      <figcaption>Foro Korczak: Innovación docente para una universidad pertinente.</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Menu Secundario -->
+
+    <section class="texto-foro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>El Foro Korckzak llama la atención sobre la necesidad de la invención pedagógica en la educación superior como estrategia de transformación de personas y mentalidades, en busca de un país que se construye en la conversación, en la preocupación por el bien del otro y en la temeridad de la creación cultural y científica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="palabras-rector" class="bloque-cita bg-rojo">
+      <div class="container">
+        <div class="row iconos">
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#video-jorge-pelaez">
+            <i class="fa fa-film" aria-hidden="true"></i>
+            <span>Vídeo</span>
+          </button>
+
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#transcripcion-jorge-pelaez">
+            <i class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Transcripción</span>
+          </button>
+
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#compartir-jorge-pelaez">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <span>Compartir</span>
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <span class="cita">“La innovación docente únicamente en función de la instrucción no es pertinente”</span>
+            <span class="nombre">Jorge Humberto Peláez Piedrahita, S.J.</span>
+            <span class="cargo">Rector de la Universidad Javeriana</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="palabras-vicerrector" class="bloque-cita bg-blanco">
+      <div class="container">
+        <div class="row iconos">
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#video-luis-prieto">
+            <i class="fa fa-film" aria-hidden="true"></i>
+            <span>Vídeo</span>
+          </button>
+
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#transcripcion-luis-prieto">
+            <i class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Transcripción</span>
+          </button>
+
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#compartir-luis-prieto">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+            <span>Compartir</span>
+          </button>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <span class="cita">”Las personas no sólo se forman en los textos sino también en la práctica y en comunidad”</span>
+            <span class="nombre">Luis David Prieto Martínez</span>
+            <span class="cargo">Vicerrector Académico de la Universidad Javeriana</span>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Pontificia Universidad Javeriana - Centro para el Aprendizaje, la Enseñanza y la Evaluación <strong>CAE+E</strong> -Vicerrectoría Académica.</p>
+            <p>Bogotá D.C. Calle 40 # 6 -39 - Tels: (571) 320 8320 Ext. 3585</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <!-- ---------------------- MODALS ---------------------- -->
+
+    <!-- Modals Rector -->
+    <div id="video-jorge-pelaez" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Jorge Humberto Peláez Piedrahita, S.J. Rector de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="transcripcion-jorge-pelaez" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Jorge Humberto Peláez Piedrahita, S.J. Rector de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="pdf/jorge-pelaez.pdf" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="compartir-jorge-pelaez" class="modal fade modal-compartir" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Jorge Humberto Peláez Piedrahita, S.J. Rector de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group row">
+              <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2F2hKOYjw&text=Palabras%20de%20bienvenida%20del%20Rector%20de%20la%20Universidad%20Javeriana%20al%20Foro%20Korczak." target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-twitter"></i></li>
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2F2hKOYjw" target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="https://plus.google.com/share?url=http%3A%2F%2Fbit.ly%2F2hKOYjw" target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-google-plus"></i></li>
+              </a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fbit.ly%2F2hKOYjw&title=Palabras%20de%20bienvenida%20del%20Rector%20de%20la%20Universidad%20Javeriana%20al%20Foro%20Korczak." target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modals Rector -->
+
+    <!-- Modals Vicerrector -->
+    <div id="video-luis-prieto" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Luis David Prieto Martínez, S.J. Vicerrector Académico de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="transcripcion-luis-prieto" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Luis David Prieto Martínez, S.J. Vicerrector Académico de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="pdf/luis-prieto.pdf" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="compartir-luis-prieto" class="modal fade modal-compartir" role="dialog">
+      <div class="modal-dialog modal-md">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Foro Korczak: Innovación docente para una universidad pertinente.</h4>
+            <h5 class="modal-title">Luis David Prieto Martínez, S.J. Vicerrector Académico de la Universidad Javeriana.</h5>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group row">
+              <a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fbit.ly%2F2hKOYjw&text=Palabras%20de%20bienvenida%20del%20Rector%20de%20la%20Universidad%20Javeriana%20al%20Foro%20Korczak." target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-twitter"></i></li>
+              </a>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fbit.ly%2F2hKOYjw" target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-facebook"></i></li>
+              </a>
+              <a href="https://plus.google.com/share?url=http%3A%2F%2Fbit.ly%2F2hKOYjw" target="blank">
+                <li class="list-group-item col-xs-3"><i class="fa fa-google-plus"></i></li>
+              </a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fbit.ly%2F2hKOYjw&title=Palabras%20de%20bienvenida%20del%20Rector%20de%20la%20Universidad%20Javeriana%20al%20Foro%20Korczak." target="blank">
+                <li class="list-group-item col-md-3"><i class="fa fa-linkedin"></i></li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Modals Vicerrector -->
+
+    <!-- /Modals Vídeos Home -->
+    <div id="video-sergio-fajardo" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">La educación en clave de innovación en la construcción de país.</h4>
+            <h5 class="modal-title">Sergio Fajardo Valderrama.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-jaime-parra" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Innovación docente: retorno a lo fundamental y oportunidades de cambio.</h4>
+            <h5 class="modal-title">Jaime Parra Rodríguez.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-panelistas" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modos alternos de educar.</h4>
+            <h5 class="modal-title">Carlos Vasco, Roberto Vidal y Andrés Garibello.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-alejandro-santamaria" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Tras las huellas de Korczak: Cómo educar a un jóven y adulto</h4>
+            <h5 class="modal-title">Alejandro Sanz de Santamaría.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-alvaro-restrepo" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Más allá de la mente: Educar para los sentidos.</h4>
+            <h5 class="modal-title">Álvaro Restrepo.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="video-carlos-lugo" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Políticas para la innovación universitaria.</h4>
+            <h5 class="modal-title">Carlos Lugo - Ministerio de Educación.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/d6SSRcWXlIU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+    <!-- Bootstrap -->
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    
+    <!-- Affix -->
+    <script src="js/affix.js"></script>
+     
+    <!-- Owl Carousel -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/carousel-triggers.js"></script>
+
+    <!-- Video JS -->
+    <script src="js/video.js"></script>
+    <script src="js/video-trigger.js"></script>
+
+    <!-- Google Analytics -->
+    <script src="js/googleAnalytics.js"></script>
+  </body>
+</html>

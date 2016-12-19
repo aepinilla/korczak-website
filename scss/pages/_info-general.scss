@@ -1,0 +1,47 @@
+.organizadores {
+	padding-bottom: 70px;
+
+	img {
+		left: 50%;
+		margin-bottom: 40px;
+		position: relative;
+		transform: translate(-50%);
+	}
+
+}
+
+.participantes {
+
+	.participante-container {
+		align-items:center;
+		display:flex;
+		justify-content:flex-end;
+	}
+}
+
+.organizadores-desktop {
+	display: none;
+}
+
+.organizadores-mobile {
+	float: right;
+}
+
+.organizadores,
+.participantes,
+.quien-es {
+
+	h2 {
+		color: $verde;
+		font-family: 'Theorem', sans-serif;
+		margin: 60px 0 40px 0;
+		text-align: center;
+	}
+
+	h3 {
+		color: $gris-claro;
+		font-size: 1.5em;
+	}
+
+}
+

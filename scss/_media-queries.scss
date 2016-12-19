@@ -1,0 +1,349 @@
+/* Media Queries */
+
+@media (max-width: 991px) {
+
+	#menu-principal .navbar-toggle {
+		top: 0;
+	}
+
+	#segundo-boton {
+		margin: 34px 15px 10px 0 !important;
+	}
+
+	.dias-evento > li > a {
+		font-size: .85em;
+		margin-top: 22px !important;
+	}
+
+	.menu-secundario-container .affix img {
+		width: 100% !important;
+	}
+
+	.menu-secundario-container .navbar-brand {
+		left: 0;
+		margin-left: 15px !important;
+		margin-top: 25px;
+		position: relative;
+		transform: none;
+	}
+	
+	.nav > li > a {
+		padding: 10px;
+	}
+
+	.logo-korczak img {
+		max-width: 250px;
+	}
+
+	.participante-container {
+		margin: 40px 0;
+	}
+	
+}
+
+@media (max-width: 768px) {
+
+	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-next,
+	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-prev {
+		top: -43% !important;
+	}
+
+
+	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-next {
+		right: 42px !important;
+	}
+
+	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-prev {
+		left: 42px !important;
+	}
+
+	#segundo-boton {
+		background-color: transparent;
+		border: none;
+		float: right;
+		margin: 20px 0 10px;
+		position: relative;
+
+		.navbar-default .navbar-toggle .icon-bar {
+			background-color: $blanco !important;
+		}
+	}
+
+	.bloque-cita {
+		.cita {
+			font-size: 1.7em;
+			margin: 30px 0;
+			padding: 0 20px;
+		}
+
+		.iconos {
+			font-size: .9em;
+			left: 53%;
+
+			button {
+				margin: 15px 0;
+			}
+		}
+
+		.nombre {
+			font-size: 1.1em;
+		}
+	}
+
+	.carousel-desktop {
+		display: none;
+	}
+
+	.carousel-mobile {
+		display: block;
+	}
+
+	.dias-evento.ensenanza {
+		margin-left: 0 !important;
+	}
+
+	.experiencias {
+		
+		h2 {
+			font-size: 1.5em;
+			margin-bottom: 5px !important;
+		}
+
+		h4 {
+			font-size: 1.2em !important;
+		}
+
+		.container-fluid{
+			padding-bottom: 5px;
+		}
+	}
+
+	.experiencias-desktop {
+		display: none;
+	}
+
+	.experiencias-mobile {
+		display: block !important;
+	}
+
+	.header-video__play-trigger {
+		top: 40% !important;
+	}
+
+	.innovacion-texto {
+		
+		&.desktop {
+			display: none
+		}
+
+		&.mobile {
+			display: block !important;
+			margin-top: 20px;
+			position: relative;
+		}
+	}
+
+	.nav > li > a {
+		margin-left: 15px;
+		margin-right: 10px;
+		padding: 5px 0 0 0;
+	}
+
+	.navbar-nav {
+		margin: 0;
+	}
+
+	.navbar-default .navbar-collapse {
+		padding-bottom: 30px;
+	}
+
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form {
+		border: none;
+	}
+
+	.menu-secundario-container .navbar {
+		min-height: 103px;
+	}
+
+	.organizadores,
+	.participantes,
+	.quien-es {
+		h2 {
+			margin: 40px 0 30px 0 !important;
+		}
+
+		p {
+			text-align: center !important
+		}
+	}
+
+	.organizadores img {
+		margin-bottom: 20px !important;
+	}
+	
+	.participante-container {
+		display: block !important;
+		text-align: center;
+
+		p {
+			padding: 0 15px;
+		}
+	}
+
+	.parrafo-javeriana {
+		margin-top: 20px !important;
+	}
+
+	.texto-foro {
+		font-size: 1.2em !important;
+
+		p {
+			padding: 0 30px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+
+	#menu-principal .navbar-toggle {
+		top: -12px;
+	}
+
+	.menu-principal {
+		min-height: 83px;
+	}
+
+	.logo-javeriana,
+	.logo-caee {
+		margin-top: -20px;
+		padding: 10px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.logo-caee {
+		margin-right: 0;
+		max-width: 110px
+	}
+	
+	.logo-javeriana {
+		margin-right: 15px;
+		max-width: 130px;
+	}
+
+	.logo-korczak img {
+		max-width: 180px;
+	}
+}
+
+@media (min-width: 768px) {
+	.organizadores-desktop {
+		display: inline-block !important;
+	}
+
+	.organizadores-mobile {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+	#menu-principal .navbar-toggle {
+		top: 5px;
+	}
+
+	#menu-secundario .navbar-header {
+		width: 100%;
+	}
+
+	.dias-evento.ensenanza,
+	.dias-evento.innovacion {
+
+		li {
+			left: 50%;
+			position: relative;
+			transform: translate(-50%);
+		}
+	}
+
+	.dias-evento.ensenanza,
+	.dias-evento.innovacion {
+		position: relative;
+		top: -68px;
+	}
+
+	.dias-evento.ensenanza {
+		margin-left: 35%;
+	}
+
+	.divisor {
+		margin-right: 8px;
+	}
+
+	.informacion-general {
+		margin-top: 9px;
+
+		li {
+			margin-right: 20px !important;
+		}
+	}
+
+	.korczak-home {
+		top: -35px;
+	}
+	
+	.logo-caee,
+	.logo-javeriana	{
+		margin-top: -10px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.logo-caee {
+		margin-right: 5px;
+		max-width: 120px;
+	}
+	
+	.logo-javeriana {
+		margin-right: 15px;
+		max-width: 150px;
+	}
+
+	.logo-korczak img {
+		max-width: 200px;
+	}
+
+	.menu-secundario-container .affix {
+		height: 84px !important;
+		min-height: 84px !important
+
+		img {
+			margin: 0;
+			width: 100%;
+		}
+
+		.dias-evento > li > a {
+			margin-top: 30px !important;
+		}
+	}
+
+	.menu-secundario-container .navbar {
+		height: 113px;
+		min-height: 113px;
+	}
+
+	.menu-secundario-container .navbar-brand {
+		margin-top: 30px;
+	}
+
+	.nav > li > a {
+		padding: 10px 0;
+	}
+	
+}
+/* /Media Queries/ */

@@ -1,0 +1,397 @@
+/* Variables */
+
+$blanco: #fff;
+$facebook: #3c5a96;
+$google-plus: #da4b3e;
+$gris-claro: #4d4d4d;
+$gris-oscuro: #212121;
+$linkedin: #127cb4;
+$rojo: #de2e35;
+$texto: #333333;
+$twitter: #2aa3ef;
+$verde: #8ac249;
+
+/* /Variables/ */
+
+@font-face {
+	font-family: 'Theorem';
+    src: url('../fonts/theorem-webfont.woff2') format('woff2'),
+         url('../fonts/theorem-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+	color: $texto;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 14pt;
+	background-image: url(../img/korczak-bg.jpg);
+}
+
+body {
+	max-width: 1600px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+footer {
+	background-color: $gris-oscuro;
+	color: $blanco;
+	font-weight: 200;
+	letter-spacing: .06em;
+	padding: 30px;
+	font-size: .9em;
+}
+
+nav {
+	min-width: 320px;
+}
+
+#menu-principal {
+	.navbar-toggle {
+		margin-right: 0;
+		top: -14px;
+		color: $verde;
+		border: none;
+	}
+}
+
+.bloque-cita {
+	padding: 50px 0;
+	text-align: center;
+
+	&.bg-rojo {
+		background: linear-gradient(
+	      rgba(222, 46, 53, 0.85), 
+	      rgba(222, 46, 53, 0.85)
+	      ),
+	      url(../img/bg-textura.jpg);
+		color: transparentize($blanco, .1);
+
+		button {
+			transition: color, .3s;
+
+			&:active,
+			&:hover {
+				color: transparentize($blanco, .4);
+			}
+		}
+	}
+
+	&.bg-verde {
+		background: linear-gradient(
+	      rgba(138, 194, 73, 0.85), 
+	      rgba(138, 194, 73, 0.85)
+	      ),
+	      url(../img/bg-textura.jpg);
+		color: transparentize($blanco, .14);
+
+		button {
+			transition: color, .3s;
+			
+			&:active,
+			&:hover {
+				color: transparentize($blanco, .4);
+			}
+		}
+	}
+
+	&.bg-blanco {
+		color: transparentize($texto, .14);
+
+		button {
+			transition: color, .3s;
+			
+			&:active,
+			&:hover {
+				color: transparentize($texto, .4);
+			}
+		}
+	}
+
+	.cita  {
+		display: block;
+		font-family: 'Theorem', sans-serif;
+		font-size: 2.1em;
+		left: 50%;
+		margin: 50px 0;
+		position: relative;
+		transform: translate(-50%);
+	}
+
+	.cargo,
+	.conferencia {
+		font-size: 1em;
+		font-weight: 200;
+		letter-spacing: .07em;
+	}
+
+	.descripcion {
+		clear: both;
+		display: block;
+		font-size: 1.8em;
+		font-weight: 200;
+		letter-spacing: .23em;
+		margin-top: 50px;
+		text-transform: uppercase;
+	}
+
+	.iconos {
+		font-size: 1em;
+		font-weight: 500;
+		left: 51%;
+		letter-spacing: .1em;
+		position: relative;
+		transform: translate(-50%);
+		
+		button {
+			background-color: transparent;
+			border: none;
+		}
+
+		i {
+			clear: both;
+			display: block;
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+
+		span {
+			text-transform: uppercase;
+		}
+	}
+
+	.nombre {
+		display: block;
+		font-size: 1.2em;
+		font-weight: 500;
+	}
+}
+
+.boton-blanco {
+	background-color: $blanco !important;
+}
+
+.carousel-mobile {
+	display: none;
+	position: relative;
+}
+
+.dias-evento {
+
+	> li > a {
+		border-top: 2px solid transparent;
+		color: $blanco !important;
+		font-weight: lighter;
+		letter-spacing: .1em;
+		margin-top: 43px;
+		padding: 15px 0 0 0;
+		text-transform: uppercase;
+		transition: border, .3s;
+
+		&:active,
+		&:focus,
+		&:hover {
+			border-top: 2px solid $verde;
+		}
+	}
+
+	&.ensenanza {
+		margin-left: 15px;
+	}
+
+	&.innovacion {
+		margin-right: 15px;
+	}
+}
+
+.divisor {
+	background-color: $verde;
+	display: inline-block;
+	height: 15px;
+	margin-right: 12px;
+	width: 3px;
+
+	+ span {
+		position: relative;
+		top: -3px;
+	}
+}
+
+.menu-principal {
+	background-color: $blanco;
+	min-height: 123px;
+
+	> .container-fluid {
+		margin-top: 34px;
+	}
+
+	.informacion-general a {
+		color: $texto !important;
+		transition: color, .3s;
+
+		&:active,
+		&:focus,
+		&:hover {
+			color: $verde !important;
+		}
+	}
+}
+
+.menu-secundario-container {
+
+	.active a {
+		background: transparent !important;
+		border-top: 2px solid $verde;
+	}
+
+	.navbar {
+		background-color: $gris-oscuro;
+		border-radius: 0;
+		border: none;
+		color: $blanco;
+		min-height: 123px;
+	}
+
+	.navbar-brand {
+		left: 50%;
+		margin-top: 30px;
+		position: absolute;
+		transform: translate(-50%);
+	}
+
+	.affix {
+		max-width: 1600px;
+		min-height: 84px !important;
+		top: 0;
+		width: 100%;
+		z-index: 99;
+
+		img {
+			margin: 0 auto;
+			width: 70%;
+		}
+		
+		.dias-evento > li > a {
+			font-size: .9em;
+			margin-top: 28px;
+			padding: 4px 0 0 0;
+		}
+
+		.navbar-brand {
+			margin-top: 13px
+		}
+
+		#segundo-boton {
+			margin: 24px 15px 10px !important;
+		}
+	}
+}
+
+.navbar-toggle {
+	float: left;
+	margin-left: 15px;
+}
+
+.logo-caee,
+.logo-javeriana {
+	margin-top: -23px;
+	margin-right: 15px;
+}
+
+.logo-caee {
+	margin-right: 50px;
+}
+
+.logo-korczak {
+	margin-left: 0 !important;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-collapse {
+	box-shadow: none;
+}
+
+/* Modals */
+
+.modal-content {
+	border-radius: 0;
+	min-width: 270px;
+
+	h4 {
+		font-family: 'Theorem', sans-serif;
+		color: $gris-claro;
+		font-size: 1.4em;
+	}
+
+	h5 {
+		font-weight: 300;
+	}
+}
+
+.modal-compartir {
+	i {
+		font-size: 1.8em;
+	}
+
+	a {
+		text-align: center;
+	}
+
+	.list-group-item {
+		border: none !important;
+
+		&:hover .fa-twitter {
+			color: darken($twitter, 15%);
+		}
+
+		&:hover .fa-facebook {
+			color: darken($facebook, 15%);
+		}
+
+		&:hover .fa-google-plus {
+			color: darken($google-plus, 15%);
+		}
+
+		&:hover .fa-linkedin {
+			color: darken($linkedin, 15%);
+		}
+	}
+
+	.fa-twitter {
+		color: $twitter;
+		transition: color, .3s;
+	}
+
+	.fa-facebook {
+		color: $facebook;
+		transition: color, .3s;
+	}
+
+	.fa-google-plus {
+		color: $google-plus;
+		transition: color, .3s;
+	}
+
+	.fa-linkedin {
+		color: $linkedin;
+		transition: color, .3s;
+	}
+}
+
+.navbar-default .navbar-toggle {
+	border-radius: 0;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: darken($blanco, 5%);
+	}
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: $verde;
+}

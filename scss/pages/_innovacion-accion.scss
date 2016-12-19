@@ -1,0 +1,164 @@
+.experiencias {
+	margin-top: 10px;
+
+	.container-fluid .row div {
+		padding: 0 10px;
+	}
+	
+	h2 {
+		background-color: $texto;
+		color: $blanco;
+		font-family: 'Theorem', sans-serif;
+		margin: 0;
+		padding: 23px;
+		text-align: center;
+	}
+	
+	a {
+		align-items:center;
+		background-color: transparentize($gris-oscuro, .1);
+		color: $blanco;
+		display: block;
+		display:flex;
+		height: 100%;
+		padding: 40px;
+		position: absolute;
+		top: -5px;
+		transition: background-color, .3s;
+		width: 100%;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+			background-color: transparentize($gris-oscuro, .3);
+		}
+	}
+
+	h4 {
+		font-family: 'Theorem', sans-serif;
+		font-size: 1.3em;
+	}
+
+	h5 {
+		font-size: 1em;
+		font-weight: 200;
+		letter-spacing: .03em;
+	}
+
+	table {
+		background-image: url(../img/experiencias-bg.jpg);
+		border-color: $blanco;
+		width: 100%;
+	}
+
+	td {
+		border: 10px solid $blanco;
+		height: 310px;
+		position: relative;
+	}
+
+	.experiencias-mobile {
+		border-left: 10px solid $blanco;
+		border-right: 10px solid $blanco;
+		display: none;
+
+		button {
+			background-color: transparentize($gris-oscuro, .1);
+			border-bottom: 5px solid $blanco;
+			border-left: none;
+			border-right: none;
+			border-top: 5px solid $blanco;
+			color: $blanco;
+			display: block;
+			padding: 20px;
+			transition: background-color, .3s;
+			width: 100%;
+
+			&:active,
+			&:focus,
+			&:hover {
+				cursor: pointer;
+				background-color: transparentize($gris-oscuro, .3);
+			}
+		}
+
+		&.experiencias1,
+		&.experiencias2,
+		&.experiencias3 {
+			background-image: url(../img/experiencias-bg.jpg);
+		}
+
+		&.experiencias1 {
+			background-position: left;
+		}
+
+		&.experiencias2 {
+			background-position: center;
+		}
+
+		&.experiencias3 {
+			background-position: right;
+		}
+	}
+}
+
+#panel-carousel {
+
+	&.owl-theme .owl-controls .owl-buttons .owl-prev {
+		border-radius: 0;
+		height: 100%;
+		left: -2px;
+		top: 0;
+
+		&:before {
+			content: "\f104";
+			font-family: FontAwesome;
+			font-size: 2.5em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons .owl-next {
+		border-radius: 0;
+		height: 100%;
+		right: -2px;
+		top: 0;
+
+		&:before {
+			content: "\f105";
+			font-family: FontAwesome;
+			font-size: 2.5em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons div {
+		background: transparent;
+		color: transparentize($blanco, .5);
+		margin: 0 !important;
+		opacity: 1 !important;
+		padding: 0 20px;
+		transition: background, .3s;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			color: transparentize($blanco, .1);
+			cursor: pointer;
+		}
+	}
+}

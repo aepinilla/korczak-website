@@ -1,0 +1,247 @@
+.korczak-home {
+	color: $blanco;
+	min-width: 320px;
+	max-width: 1600px;
+	padding: 0;
+}
+
+.innovacion-texto {
+	background-color: transparentize($blanco, .2);
+	color: $texto;
+	display: block;
+	left: 50%;
+	max-width: 353px;
+	padding: 20px 20px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	top: 37%;
+	transform: translate(-50%);
+
+	&.mobile {
+		display: none;
+	}
+
+	span {
+		clear: both;
+		display: block;
+
+		&:first-child {
+			font-size: 1.47em;
+			font-weight: bolder;
+			letter-spacing: .1em;
+		}
+
+		&:nth-child(2) {
+			font-weight: 200;
+			letter-spacing: .1em;
+		}
+	}
+}
+
+.texto-foro {
+	font-size: 1.5em;
+	line-height: 1.8em;
+	padding: 50px 0 60px;
+	text-align: center;
+}
+
+
+/* ============================ 
+    Carousel de Conferencistas
+   ============================ */
+
+.carousel {
+	left: 50%;
+	position: absolute;
+	top: 58%;
+	transform: translate(-50%);
+}
+
+#conferencistas-carousel {
+
+	.item {
+		margin: 0 2px;
+	    border-radius: 3px;
+	    color: #FFF;
+	    display: block;
+	    text-align: center;
+
+	    figcaption {
+			position: absolute;
+			top: 0;		
+		    align-items:center;
+		    background-color: transparentize($gris-oscuro, .2);
+		    display:flex;
+		    height: 100%;
+		    justify-content:center;
+		    padding: 30px;
+		    text-align: center;
+		    transition: background-color, .3s;
+		    width: 100%;
+
+		    &:active,
+		    &:focus,
+		    &:hover {
+		    	background-color: transparentize($gris-oscuro, .5);
+		    	cursor: pointer;
+		    }
+		}
+
+	    img {
+		    display: block;
+		    height: auto;
+		    width: 100%;
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons .owl-prev{
+		border-radius: 0;
+		height: 100%;
+		left: -42px;
+		top: 0;
+
+		&:before {
+			content: "\f104";
+			font-family: FontAwesome;
+			font-size: 1.7em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons .owl-next{
+		border-radius: 0;
+		height: 100%;
+		right: -42px;
+		top: 0;
+
+		&:before {
+			content: "\f105";
+			font-family: FontAwesome;
+			font-size: 1.7em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons div {
+		background: $texto !important;
+		margin: 0 !important;
+		opacity: 1 !important;
+		padding: 0 20px;
+		transition: background, .3s;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			background: $gris-oscuro !important;
+		}
+	}
+}
+
+#conf-mobile {
+	margin-top: 30px;
+
+	&.owl-carousel {
+		width: 73% !important;
+	}
+
+	.item {
+	    border-radius: 3px;
+	    color: #FFF;
+	    display: block;
+	    text-align: center;
+
+	    figcaption {
+			position: absolute;
+			top: 0;		
+		    align-items:center;
+		    background-color: transparentize($gris-oscuro, .2);
+		    display:flex;
+		    height: 100%;
+		    justify-content:center;
+		    padding: 30px;
+		    text-align: center;
+		    transition: background-color, .3s;
+		    width: 100%;
+
+		    &:active,
+		    &:focus,
+		    &:hover {
+		    	background-color: transparentize($gris-oscuro, .5);
+		    	cursor: pointer;
+		    }
+		}
+
+	    img{
+		    display: block;
+		    height: auto;
+		    width: 100%;
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons .owl-prev{
+		border-radius: 0;
+		height: 100%;
+		left: -42px;
+		top: 0;
+
+		&:before {
+			content: "\f104";
+			font-family: FontAwesome;
+			font-size: 1.7em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons .owl-next{
+		border-radius: 0;
+		height: 100%;
+		right: -42px;
+		top: 0;
+
+		&:before {
+			content: "\f105";
+			font-family: FontAwesome;
+			font-size: 1.7em;
+		    font-style: normal;
+		    font-weight: normal;
+		    position: absolute;
+		    right: 30%;
+		    text-decoration: inherit;
+		    top: 50%;
+		    transform: translate(-50%,-50%);
+		}
+	}
+
+	&.owl-theme .owl-controls .owl-buttons div {
+		margin: 0 !important;
+		opacity: 1 !important;
+		padding: 0 20px;
+		transition: color, .3s;
+		color: $texto !important;
+		
+		&:active,
+		&:focus,
+		&:hover {
+			color: $verde !important;
+		}
+	}
+}

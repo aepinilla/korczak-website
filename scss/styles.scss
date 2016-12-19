@@ -1,0 +1,17 @@
+/* Bower Components */
+@import "customVariables";
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+
+/* General Styles */
+@import "general";
+@import "media-queries";
+
+/* Plugins */
+@import "plugins/owl.carousel";
+@import "plugins/video";
+
+/* Pages */
+@import "pages/innovacion-accion";
+@import "pages/info-general";
+@import "pages/home";

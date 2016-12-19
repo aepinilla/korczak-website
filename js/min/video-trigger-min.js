@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".header-video").each(function(e,d){headerVideo=new HeaderVideo({element:d,media:".header-video__media",playTrigger:".header-video__play-trigger",closeTrigger:".header-video__close-trigger"})})});

@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#conferencistas-carousel").owlCarousel({items:4,lazyLoad:!0,navigation:!0})}),$(document).ready(function(){$("#panel-carousel").owlCarousel({navigation:!0,slideSpeed:300,paginationSpeed:400,singleItem:!0,autoplay:1e3})}),$(document).ready(function(){$("#conf-mobile").owlCarousel({items:4,lazyLoad:!0,navigation:!0})});
