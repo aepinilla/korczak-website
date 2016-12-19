@@ -41,7 +41,7 @@
 	
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-next,
 	#panel-carousel.owl-theme .owl-controls .owl-buttons .owl-prev {
@@ -96,6 +96,12 @@
 
 	.carousel-mobile {
 		display: block;
+	}
+
+	.dias-evento {
+		> li > a {
+			letter-spacing: .05em;
+		}
 	}
 
 	.dias-evento.ensenanza {
