@@ -47,6 +47,10 @@ nav {
 	min-width: 320px;
 }
 
+.nav > li > a {
+	padding: 10px 8px;
+}
+
 #menu-principal {
 	.navbar-toggle {
 		margin-right: 0;
@@ -122,7 +126,7 @@ nav {
 	.cargo,
 	.conferencia {
 		font-size: 1em;
-		font-weight: 200;
+		font-weight: 300;
 		letter-spacing: .07em;
 	}
 
@@ -209,7 +213,7 @@ nav {
 	background-color: $verde;
 	display: inline-block;
 	height: 15px;
-	margin-right: 12px;
+	margin-right: 16px;
 	width: 3px;
 
 	+ span {
@@ -300,7 +304,7 @@ nav {
 }
 
 .logo-caee {
-	margin-right: 50px;
+	margin-right: 20px;
 }
 
 .logo-korczak {

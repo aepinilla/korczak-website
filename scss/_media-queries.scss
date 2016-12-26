@@ -257,6 +257,10 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
 
+	.nav > li > a {
+		padding: 10px 7px;
+	}
+
 	#menu-principal .navbar-toggle {
 		top: 5px;
 	}
@@ -286,7 +290,7 @@
 	}
 
 	.divisor {
-		margin-right: 8px;
+		margin-right: 14px;
 	}
 
 	.informacion-general {
