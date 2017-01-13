@@ -8829,7 +8829,7 @@ nav {
 /* Pages */
 @-moz-document url-prefix() {
   .experiencias a {
-    top: -5px; } }
+    top: -5px !important; } }
 .experiencias {
   margin-top: 10px; }
   .experiencias .container-fluid .row div {
