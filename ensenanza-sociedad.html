@@ -34,9 +34,9 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav informacion-general">
-            <li><a href="info-general.html#quien-es"><span class="divisor"></span><span>¿Quién es Janusz Korczak?</span></a></li>
-            <li><a href="info-general.html#participantes"><span class="divisor"></span><span>Participantes</span></a></li>
-            <li><a href="info-general.html#organizadores"><span class="divisor"></span><span>Organizadores</span></a></li>
+            <li><a href="info-general.html#menu-secundario"><span class="divisor"></span><span>¿Quién es Janusz Korczak?</span></a></li>
+            <li><a href="info-general.html#quien-es-titulo"><span class="divisor"></span><span>Participantes</span></a></li>
+            <li><a href="info-general.html#organizadores-titulo"><span class="divisor"></span><span>Organizadores</span></a></li>
           </ul>
 
           <div class="nav navbar-nav navbar-right organizadores-desktop">
@@ -160,7 +160,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <span class="cita">“(Es necesario cambiar) esa actitud de guerra contra las drogas hacia una actitud de investigación en todas las áreas de las ciencias”</span>
-                    <span class="nombre">Carlos Vasco</span>
+                    <span class="nombre">Carlos Vasco, Roberto Vidal López y Andrés Garibello</span>
                     <span class="conferencia">Modos alternos de educar</span>
                     <span class="descripcion">Panel</span>
                   </div>
@@ -181,7 +181,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <span class="cita">“(...) y eso creo que es la Paz: el conflicto político exacerbado en el que podamos tener todas las posiciones posibles”</span>
-                    <span class="nombre">Roberto Vidal López</span>
+                    <span class="nombre">Roberto Vidal López, Carlos Vasco y Andrés Garibello</span>
                     <span class="conferencia">Modos alternos de educar</span>
                     <span class="descripcion">Panel</span>
                   </div>
@@ -202,7 +202,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <span class="cita">"La gente tiene derecho a equivocarse: eso es también innovación para mí"</span>
-                    <span class="nombre">Andrés Garibello</span>
+                    <span class="nombre">Andrés Garibello, Roberto Vidal López y Andrés Garibello</span>
                     <span class="conferencia">Modos alternos de educar</span>
                     <span class="descripcion">Panel</span>
                   </div>
@@ -218,12 +218,17 @@
       <div class="container">
       
         <div class="row iconos">
-          <button class="col-sm-3 col-sm-offset-3 col-md-3 col-md-offset-3 col-xs-12" data-toggle="modal" data-target="#video-alejandro-santamaria">
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#video-alejandro-santamaria">
             <i class="fa fa-film" aria-hidden="true"></i>
             <span>Vídeo</span>
           </button>
 
-          <button class="col-sm-3 col-md-3 col-xs-12" data-toggle="modal" data-target="#compartir-alejandro-santamaria">
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#transcripcion-alejandro-santamaria">
+            <i class="fa fa-file-text" aria-hidden="true"></i>
+            <span>Transcripción</span>
+          </button>
+
+          <button class="col-sm-4 col-xs-12" data-toggle="modal" data-target="#compartir-alejandro-santamaria">
             <i class="fa fa-share-alt" aria-hidden="true"></i>
             <span>Compartir</span>
           </button>
@@ -461,6 +466,22 @@
       </div>
     </div>
 
+    <div id="transcripcion-alejandro-santamaria" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Innovación docente: retorno a lo fundamental y oportunidades de cambio.</h4>
+            <h5 class="modal-title">Jaime Parra Rodríguez.</h5>
+          </div>
+          <div class="modal-body">
+            <iframe width="100%" height="480" src="pdf/alejandro-santamaria.pdf" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div id="compartir-alejandro-santamaria" class="modal fade modal-compartir" role="dialog">
       <div class="modal-dialog modal-md">
         <!-- Modal content-->
@@ -569,5 +590,6 @@
 
     <!-- Google Analytics -->
     <script src="js/googleAnalytics.js"></script>
+
   </body>
 </html>
