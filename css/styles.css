@@ -8942,7 +8942,7 @@ nav {
     color: rgba(255, 255, 255, 0.9);
     cursor: pointer; }
 
-.menu-secundario-container {
+.menu-secundario-container.nav-info-general {
   margin-bottom: 100px; }
 
 .organizadores {

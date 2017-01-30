@@ -1,0 +1,1 @@
+$(".videoModal").on("hide.bs.modal",function(t){var a=$(t.delegateTarget).find("iframe"),r=a.attr("src");a.attr("src","/empty.html"),a.attr("src",r)});
