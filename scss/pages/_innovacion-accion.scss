@@ -4,6 +4,105 @@
 	}
 }
 
+/* Heart beat animation */
+@keyframes beat{
+	to { transform: scale(.97); }
+}
+
+.heart {
+	color: #e00;
+	animation: beat .8s infinite alternate;
+	transform-origin: center;
+}
+
+@keyframes "beat" {
+	to {
+   		transform: scale(.97);
+ 	}
+}
+
+.banners {
+
+	a {
+		text-decoration: none !important;
+	}
+
+	a:hover {
+		cursor: pointer;
+		text-decoration: none;
+
+		> div {
+			box-shadow: none;
+		}
+	}
+
+	.excelencia {
+		background-color: $amarillo;
+		color: transparentize($texto,.1);
+	}
+
+	.pertinente {
+		background-color: $azul;
+		color: transparentize($blanco,.1);
+
+		h3 {
+			margin-top: 10px;
+		}
+	}
+
+	.excelencia,
+	.pertinente {
+
+		text-align: center;
+		padding: 15px;
+		margin-bottom: 10px;
+		box-shadow: 0px 23px 18px -23px rgba(0,0,0,0.75);
+		transition: box-shadow, .2s;
+
+		h4,
+		h5,
+		h6 {
+			font-weight: 300 !important;
+		}
+
+		h3 {
+			font-family: 'Theorem', sans-serif;
+			margin: 10px 0;
+			font-size: 29px;
+		}
+
+		h4 {
+			font-size: 18px;
+		}
+
+		h5 {
+			font-style: italic !important;
+			font-size: 16px;
+		}
+
+		h6 {
+			font-size: 12px;
+		}
+	}
+
+	.excelencia-container:hover .excelencia {
+		background-color: darken($amarillo, 2%);
+	}
+
+	.pertinente-container:hover .pertinente {
+		background-color: darken($azul, 2%);
+	}
+
+
+	.excelencia-container {
+		padding: 0 10px 0 5px;
+	}
+	
+	.pertinente-container {
+		padding: 0 5px 0 10px;
+	}
+}
+
 .experiencias {
 	margin-top: 10px;
 

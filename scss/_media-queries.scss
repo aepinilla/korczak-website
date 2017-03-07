@@ -9,6 +9,15 @@
 	#segundo-boton {
 		margin: 34px 15px 10px 0 !important;
 	}
+	
+	.banners {
+		 
+		.excelencia-container,
+		.pertinente-container {
+			padding: 0 10px !important;
+		}
+	}
+	
 
 	.dias-evento > li > a {
 		font-size: .85em;
@@ -217,6 +226,44 @@
 		top: -12px;
 	}
 
+	.banners {
+
+		.excelencia,
+		.pertinente {
+
+			h3 {
+				font-size: 25px !important;
+			}
+
+			h4 {
+				font-size: 16px !important;
+			}
+
+			h5 {
+				font-size: 14px !important;
+			}
+
+			h6 {
+				font-size: 12px !important;
+			}
+		}
+
+		.excelencia-container,
+		.pertinente-container {
+			background-color: transparent;
+			border: none;
+		}
+
+		.excelencia-container:hover .excelencia {
+			background-color: darken($amarillo, 2%);
+		}
+
+		.pertinente-container:hover .pertinente {
+			background-color: darken($azul, 2%);
+		}
+
+	}
+
 	.equipo {
 		.nombre {
 			margin-bottom: 20px;
@@ -265,6 +312,18 @@
 
 	.organizadores-mobile {
 		display: none;
+	}
+
+	.banners {
+
+		.pertinente h3 {
+			margin-top: 26px !important;
+		}
+
+		.excelencia,
+		.pertinente {
+			min-height: 167px;
+		}
 	}
 }
 

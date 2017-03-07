@@ -8388,6 +8388,10 @@ nav {
   #segundo-boton {
     margin: 34px 15px 10px 0 !important; }
 
+  .banners .excelencia-container,
+  .banners .pertinente-container {
+    padding: 0 10px !important; }
+
   .dias-evento > li > a {
     font-size: .85em;
     margin-top: 22px !important; }
@@ -8526,6 +8530,27 @@ nav {
   #menu-principal .navbar-toggle {
     top: -12px; }
 
+  .banners .excelencia h3,
+  .banners .pertinente h3 {
+    font-size: 25px !important; }
+  .banners .excelencia h4,
+  .banners .pertinente h4 {
+    font-size: 16px !important; }
+  .banners .excelencia h5 ,
+  .banners .pertinente h5  {
+    font-size: 14px !important; }
+  .banners .excelencia h6,
+  .banners .pertinente h6 {
+    font-size: 12px !important; }
+  .banners .excelencia-container,
+  .banners .pertinente-container {
+    background-color: transparent;
+    border: none; }
+  .banners .excelencia-container:hover .excelencia {
+    background-color: #ffb714; }
+  .banners .pertinente-container:hover .pertinente {
+    background-color: #006bb2; }
+
   .equipo .nombre {
     margin-bottom: 20px; }
   .equipo .cargo,
@@ -8559,7 +8584,13 @@ nav {
     display: inline-block !important; }
 
   .organizadores-mobile {
-    display: none; } }
+    display: none; }
+
+  .banners .pertinente h3 {
+    margin-top: 26px !important; }
+  .banners .excelencia,
+  .banners .pertinente {
+    min-height: 167px; } }
 @media (min-width: 768px) and (max-width: 991px) {
   .nav > li > a {
     padding: 10px 7px; }
@@ -8838,6 +8869,71 @@ nav {
 @-moz-document url-prefix() {
   .experiencias a {
     top: -5px !important; } }
+/* Heart beat animation */
+@keyframes beat {
+  to {
+    transform: scale(0.97); } }
+.heart {
+  color: #e00;
+  animation: beat .8s infinite alternate;
+  transform-origin: center; }
+
+@keyframes "beat" {
+  to {
+    transform: scale(0.97); } }
+.banners a  {
+  text-decoration: none !important; }
+.banners a:hover {
+  cursor: pointer;
+  text-decoration: none; }
+  .banners a:hover > div {
+    box-shadow: none; }
+.banners .excelencia {
+  background-color: #ffba1e;
+  color: rgba(51, 51, 51, 0.9); }
+.banners .pertinente {
+  background-color: #0071bc;
+  color: rgba(255, 255, 255, 0.9); }
+  .banners .pertinente h3 {
+    margin-top: 10px; }
+.banners .excelencia,
+.banners .pertinente {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0px 23px 18px -23px rgba(0, 0, 0, 0.75);
+  transition: box-shadow, .2s; }
+  .banners .excelencia h4,
+  .banners .excelencia h5,
+  .banners .excelencia h6 ,
+  .banners .pertinente h4,
+  .banners .pertinente h5,
+  .banners .pertinente h6  {
+    font-weight: 300 !important; }
+  .banners .excelencia h3,
+  .banners .pertinente h3 {
+    font-family: 'Theorem', sans-serif;
+    margin: 10px 0;
+    font-size: 29px; }
+  .banners .excelencia h4,
+  .banners .pertinente h4 {
+    font-size: 18px; }
+  .banners .excelencia h5 ,
+  .banners .pertinente h5  {
+    font-style: italic !important;
+    font-size: 16px; }
+  .banners .excelencia h6,
+  .banners .pertinente h6 {
+    font-size: 12px; }
+.banners .excelencia-container:hover .excelencia {
+  background-color: #ffb714; }
+.banners .pertinente-container:hover .pertinente {
+  background-color: #006bb2; }
+.banners .excelencia-container {
+  padding: 0 10px 0 5px; }
+.banners .pertinente-container {
+  padding: 0 5px 0 10px; }
+
 .experiencias {
   margin-top: 10px; }
   .experiencias .container-fluid .row div {
@@ -9178,3 +9274,5 @@ nav {
     color: #333333 !important; }
     #conf-mobile.owl-theme .owl-controls .owl-buttons div:active, #conf-mobile.owl-theme .owl-controls .owl-buttons div:focus, #conf-mobile.owl-theme .owl-controls .owl-buttons div:hover {
       color: #8ac249 !important; }
+
+/*# sourceMappingURL=styles.css.map */
