@@ -117,6 +117,7 @@
 
 		h4 {
 			font-size: 1.2em !important;
+			line-height: 22px;
 		}
 
 		.container-fluid{
@@ -214,6 +215,18 @@
 
 	#menu-principal .navbar-toggle {
 		top: -12px;
+	}
+
+	.equipo {
+		.nombre {
+			margin-bottom: 20px;
+		}
+		
+		.cargo,
+		.nombre {
+			clear: both;
+			display: block;
+		}
 	}
 
 	.menu-principal {

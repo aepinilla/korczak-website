@@ -1,3 +1,12 @@
+.equipo {
+	font-size: 16px;
+	padding-bottom: 50px;
+	text-align: center;
+
+	.cargo {
+		font-weight: 700;
+	}
+}
 .menu-secundario-container.nav-info-general {
 	margin-bottom: 100px;
 }
@@ -31,6 +40,7 @@
 	float: right;
 }
 
+.equipo,
 .organizadores,
 .participantes,
 .quien-es {

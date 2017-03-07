@@ -8458,7 +8458,8 @@ nav {
     font-size: 1.5em;
     margin-bottom: 5px !important; }
   .experiencias h4 {
-    font-size: 1.2em !important; }
+    font-size: 1.2em !important;
+    line-height: 22px; }
   .experiencias .container-fluid {
     padding-bottom: 5px; }
 
@@ -8524,6 +8525,13 @@ nav {
 @media (max-width: 480px) {
   #menu-principal .navbar-toggle {
     top: -12px; }
+
+  .equipo .nombre {
+    margin-bottom: 20px; }
+  .equipo .cargo,
+  .equipo .nombre {
+    clear: both;
+    display: block; }
 
   .menu-principal {
     min-height: 83px; }
@@ -8942,6 +8950,13 @@ nav {
     color: rgba(255, 255, 255, 0.9);
     cursor: pointer; }
 
+.equipo {
+  font-size: 16px;
+  padding-bottom: 50px;
+  text-align: center; }
+  .equipo .cargo {
+    font-weight: 700; }
+
 .menu-secundario-container.nav-info-general {
   margin-bottom: 100px; }
 
@@ -8964,6 +8979,7 @@ nav {
 .organizadores-mobile {
   float: right; }
 
+.equipo h2,
 .organizadores h2,
 .participantes h2,
 .quien-es h2 {
@@ -8971,6 +8987,7 @@ nav {
   font-family: 'Theorem', sans-serif;
   margin: 0 0 40px 0;
   text-align: center; }
+.equipo h3,
 .organizadores h3,
 .participantes h3,
 .quien-es h3 {
