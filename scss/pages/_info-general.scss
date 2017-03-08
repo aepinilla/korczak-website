@@ -3,6 +3,10 @@
 	padding-bottom: 50px;
 	text-align: center;
 
+	> div > div > div {
+		margin: 7px 0;
+	}
+
 	.cargo {
 		font-weight: 700;
 	}
