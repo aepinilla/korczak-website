@@ -9003,6 +9003,8 @@ nav {
       background-position: center; }
     .experiencias .experiencias-mobile.experiencias3 {
       background-position: right; }
+  .experiencias .experiencias-desktop tr {
+    cursor: pointer; }
 
 #panel-carousel.owl-theme .owl-controls .owl-buttons .owl-prev {
   border-radius: 0;
