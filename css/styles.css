@@ -8381,14 +8381,6 @@ nav {
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #8ac249; }
 
-.pdf-container {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  height: 500px; }
-  .pdf-container object {
-    width: 100%;
-    height: 10000px; }
-
 /* Media Queries */
 @media (max-width: 991px) {
   #menu-principal .navbar-toggle {
