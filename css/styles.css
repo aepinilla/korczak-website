@@ -8974,9 +8974,20 @@ nav {
     border-color: #fff;
     width: 100%; }
   .experiencias td {
-    border: 10px solid #fff;
+    /*border: 10px solid $blanco;*/
     height: 310px;
-    position: relative; }
+    position: relative;
+    /*Fix*/
+    border: none;
+    border-bottom: 1px solid #0c0065; }
+    .experiencias td:before {
+      position: relative;
+      left: 10px;
+      width: 45%;
+      padding-right: 25px;
+      white-space: nowrap;
+      font-family: 'Alegreya SC', Palatino, serif;
+      font-weight: 700; }
   .experiencias .experiencias-mobile {
     border-left: 10px solid #fff;
     border-right: 10px solid #fff;

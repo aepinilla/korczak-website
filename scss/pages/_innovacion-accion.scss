@@ -159,9 +159,23 @@
 	}
 
 	td {
-		border: 10px solid $blanco;
+		/*border: 10px solid $blanco;*/
 		height: 310px;
 		position: relative;
+
+		/*Fix*/
+		border: none;
+		border-bottom: 1px solid #0c0065;
+
+		&:before {
+			position: relative;
+			left: 10px;
+			width: 45%;
+			padding-right: 25px;
+			white-space: nowrap;
+			font-family: 'Alegreya SC', Palatino, serif;
+			font-weight: 700;
+		}
 	}
 
 	.experiencias-mobile {
