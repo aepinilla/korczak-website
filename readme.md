@@ -8,4 +8,6 @@ My role consisted on designing the microsite and programming it. I used Bootstra
 
 * Thanks to Nicolás Alvarado and Mónica Bustamante for editing the videos.
 
-[[github.com/nesard/korczak-website/blob/master/img/korczak-mockup1.png]]
+
+
+![alt text](https://github.com/nesard/korczak-website/blob/master/img/korczak-mockup1.png)
