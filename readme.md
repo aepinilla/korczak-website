@@ -25,6 +25,7 @@ Technologies and tools used:
 
 * Thanks to Nicolás Alvarado and Mónica Bustamante for editing the videos.
 
+##
 ![alt text](https://github.com/nesard/korczak-website/blob/master/img/korczak-mockup1.png)
 ![alt text](https://github.com/nesard/korczak-website/blob/master/img/korczak-mockup2.png)
 ![alt text](https://github.com/nesard/korczak-website/blob/master/img/korczak-mockup3.png)
