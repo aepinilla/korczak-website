@@ -1,4 +1,4 @@
-# Foro Korczak Microsite
+# 'Foro Korczak' Microsite
 
 This is a microsite the summarises the 'Foro Korczak' (Korczak Forum), an event about innovation in higher education. The event was organized by the CAE+E, an institute from the Javeriana University of Colombia.
 
