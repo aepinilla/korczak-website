@@ -1,12 +1,12 @@
-# 'Foro Korczak' Microsite
+# Foro Korczak Report
 
-This is a microsite the summarises the 'Foro Korczak' (Korczak Forum), an event about innovation in higher education. The event was organized by the CAE+E, an institute from the Javeriana University of Colombia.
+This is a microsite with the the report of Foro Korczak ('Korczak Forum'), an event about innovation in higher education. The event was organized by the CAE+E, an institute of the Pontificial Xaverian University of Colombia.
 
 I had two roles in this project:
 1. UI Designer.
 2. Front-End Developer.
 
-The work process had these stages:
+The work process had the following stages:
 1. Design the wireframes.
 2. Design the graphical interface.
 3. Write the HTML/CSS/JS code of the site.
